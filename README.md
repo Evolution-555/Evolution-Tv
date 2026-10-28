@@ -4,6 +4,9 @@ A lightweight, optimized TV application for LG webOS with comprehensive TV show 
 
 ## 🚀 Quick Install
 
+**Note:** The IPK file needs to be built manually. See [MANUAL_BUILD.md](MANUAL_BUILD.md) for instructions.
+
+Once built:
 1. Download the IPK from [GitHub Releases](https://github.com/Evolution-555/Evolution-Tv/releases)
 2. Install via LG Homebrew Channel
 3. Configure Trakt, Debrid, and add-ons in the app settings
