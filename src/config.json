@@ -1,0 +1,65 @@
+{
+  "version": "1.0",
+  "widgets": [
+    {
+      "id": "trending-movies",
+      "type": "grid",
+      "title": "Trending Movies",
+      "dataSource": "trakt",
+      "listType": "trending",
+      "mediaType": "movie",
+      "layout": {
+        "x": 20,
+        "y": 80,
+        "w": 1880,
+        "h": 300
+      },
+      "refreshInterval": 3600
+    },
+    {
+      "id": "trending-shows",
+      "type": "grid",
+      "title": "Trending TV Shows",
+      "dataSource": "trakt",
+      "listType": "trending",
+      "mediaType": "show",
+      "layout": {
+        "x": 20,
+        "y": 410,
+        "w": 1880,
+        "h": 300
+      },
+      "refreshInterval": 3600
+    },
+    {
+      "id": "continue-watching",
+      "type": "list",
+      "title": "Continue Watching",
+      "dataSource": "trakt",
+      "listType": "history",
+      "mediaType": "both",
+      "layout": {
+        "x": 20,
+        "y": 740,
+        "w": 920,
+        "h": 320
+      },
+      "refreshInterval": 1800
+    },
+    {
+      "id": "my-watchlist",
+      "type": "list",
+      "title": "My Watchlist",
+      "dataSource": "trakt",
+      "listType": "watchlist",
+      "mediaType": "both",
+      "layout": {
+        "x": 980,
+        "y": 740,
+        "w": 920,
+        "h": 320
+      },
+      "refreshInterval": 1800
+    }
+  ]
+}

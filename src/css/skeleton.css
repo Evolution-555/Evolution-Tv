@@ -1,0 +1,91 @@
+/* Skeleton loading states for LG Fusion */
+
+/* Base skeleton animation */
+@keyframes skeletonPulse {
+  0%, 100% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+/* Skeleton base class */
+.skeleton {
+  background-color: #2a3447;
+  animation: skeletonPulse 1.5s ease-in-out infinite;
+  border-radius: 4px;
+}
+
+/* Skeleton card (matches grid item dimensions) */
+.skeleton-card {
+  width: 160px;
+  height: 240px;
+  border-radius: 8px;
+}
+
+/* Skeleton list item */
+.skeleton-list-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px;
+  border-radius: 8px;
+  min-height: 80px;
+}
+
+.skeleton-list-poster {
+  width: 60px;
+  height: 90px;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.skeleton-list-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.skeleton-list-title {
+  width: 60%;
+  height: 16px;
+  border-radius: 4px;
+}
+
+.skeleton-list-meta {
+  width: 40%;
+  height: 14px;
+  border-radius: 4px;
+}
+
+/* Skeleton widget title */
+.skeleton-title {
+  width: 200px;
+  height: 24px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+/* Skeleton grid container */
+.skeleton-grid {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  padding: 0 20px;
+}
+
+/* Skeleton list container */
+.skeleton-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 0 20px;
+}
+
+/* Remove skeleton class when content is loaded */
+.skeleton.loaded {
+  animation: none;
+  background-color: transparent;
+}

@@ -1,0 +1,33 @@
+{
+  "name": "evolution-tv",
+  "version": "1.0.0",
+  "description": "Evolution TV - Modular streaming app for LG webOS with TV show/movie tracking, addon support, and Debrid integration",
+  "main": "src/main.js",
+  "scripts": {
+    "package": "ares-package .",
+    "install": "ares-install com.evolution555.evolutiontv_1.0.0_all.ipk",
+    "launch": "ares-launch com.evolution555.evolutiontv",
+    "inspect": "ares-inspect com.evolution555.evolutiontv",
+    "build": "build.bat",
+    "build:unix": "bash build.sh"
+  },
+  "keywords": [
+    "webos",
+    "lg-tv",
+    "streaming",
+    "trakt",
+    "debrid",
+    "tv-shows",
+    "movies",
+    "tracking"
+  ],
+  "author": "Evolution-555",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Evolution-555/Evolution-Tv.git"
+  },
+  "devDependencies": {
+    "@webosose/ares-cli": "^2.0.0"
+  }
+}

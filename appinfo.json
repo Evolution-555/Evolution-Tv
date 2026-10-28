@@ -1,0 +1,28 @@
+{
+  "id": "com.evolution555.evolutiontv",
+  "version": "1.0.0",
+  "vendor": "Evolution-555",
+  "type": "web",
+  "main": "index.html",
+  "title": "Evolution TV",
+  "icon": "icon.svg",
+  "largeIcon": "largeIcon.svg",
+  "uiRevision": 2,
+  "requiredVersion": "3.0.0",
+  "appCategory": "video",
+  "keywords": [
+    "streaming",
+    "media",
+    "trakt",
+    "debrid",
+    "tv",
+    "movies"
+  ],
+  "iconColor": "#1c2331",
+  "splashBackground": "#0a0a0a",
+  "trustLevel": "normal",
+  "permissions": [
+    "network",
+    "storage"
+  ]
+}

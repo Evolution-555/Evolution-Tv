@@ -1,0 +1,62 @@
+{
+  "version": "1.0",
+  "widgets": [
+    {
+      "id": "trending-movies",
+      "type": "grid",
+      "title": "Trending Movies",
+      "layout": {
+        "x": 20,
+        "y": 50,
+        "w": 1880,
+        "h": 300
+      },
+      "dataSource": "trakt",
+      "listType": "trending",
+      "refreshInterval": 3600
+    },
+    {
+      "id": "my-watchlist",
+      "type": "grid",
+      "title": "My Watchlist",
+      "layout": {
+        "x": 20,
+        "y": 380,
+        "w": 1880,
+        "h": 300
+      },
+      "dataSource": "trakt",
+      "listType": "watchlist",
+      "refreshInterval": 1800
+    },
+    {
+      "id": "recently-watched",
+      "type": "list",
+      "title": "Recently Watched",
+      "layout": {
+        "x": 20,
+        "y": 710,
+        "w": 920,
+        "h": 350
+      },
+      "dataSource": "trakt",
+      "listType": "history",
+      "refreshInterval": 1800
+    },
+    {
+      "id": "custom-list",
+      "type": "list",
+      "title": "Custom List",
+      "layout": {
+        "x": 980,
+        "y": 710,
+        "w": 920,
+        "h": 350
+      },
+      "dataSource": "trakt",
+      "listType": "custom",
+      "listId": "your-list-id",
+      "refreshInterval": 3600
+    }
+  ]
+}

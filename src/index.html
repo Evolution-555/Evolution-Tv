@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>LG Fusion</title>
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/focus.css" />
+  <link rel="stylesheet" href="css/skeleton.css" />
+</head>
+<body>
+  <!-- Main canvas container (1920x1080 logical resolution) -->
+  <div id="app-canvas" class="app-canvas">
+    <!-- Settings button -->
+    <button id="settings-btn" class="settings-trigger focusable" style="
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      padding: 12px 24px;
+      background-color: #1c2331;
+      color: white;
+      border: 2px solid #3a4457;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      z-index: 1000;
+    ">Evolution TV Settings</button>
+
+    <!-- Dynamic widget container -->
+    <div id="widget-container" class="widget-container"></div>
+
+    <!-- Loading overlay -->
+    <div id="loading-overlay" class="loading-overlay">
+      <div class="loading-spinner"></div>
+      <div class="loading-text">Loading...</div>
+    </div>
+  </div>
+
+  <!-- Core application scripts -->
+  <script src="js/utils/logger.js"></script>
+  <script src="js/utils/apiClient.js"></script>
+  <script src="js/models/mediaItem.js"></script>
+  <script src="js/models/streamInfo.js"></script>
+  <script src="js/services/storageService.js"></script>
+  <script src="js/services/configLoader.js"></script>
+  <script src="js/services/traktService.js"></script>
+  <script src="js/services/addonService.js"></script>
+  <script src="js/services/debridService.js"></script>
+  <script src="js/services/videoPlayer.js"></script>
+  <script src="js/widgets/widgetBase.js"></script>
+  <script src="js/widgets/gridWidget.js"></script>
+  <script src="js/widgets/listWidget.js"></script>
+  <script src="js/core/focusManager.js"></script>
+  <script src="js/core/layoutManager.js"></script>
+  <script src="js/core/settingsManager.js"></script>
+  <script src="js/core/streamSelector.js"></script>
+  <script src="js/core/app.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
