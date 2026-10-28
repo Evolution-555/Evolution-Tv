@@ -1,0 +1,16 @@
+{
+  "apps": [
+    {
+      "id": "com.evolution555.evolutiontv",
+      "title": "Evolution TV",
+      "version": "1.0.0",
+      "description": "Modular streaming app for LG webOS with comprehensive TV show and movie tracking. Features Trakt integration, Stremio/Cyberflix addon support, and Debrid provider integration for streaming.",
+      "category": "video",
+      "icon": "https://github.com/Evolution-555/Evolution-Tv/raw/main/icon.svg",
+      "ipkUrl": "https://github.com/Evolution-555/Evolution-Tv/releases/download/v1.0.0/evolution-tv.ipk",
+      "author": "Evolution-555",
+      "homepage": "https://github.com/Evolution-555/Evolution-Tv",
+      "changelog": "Initial release with TV show/movie tracking, Trakt integration, and Debrid support"
+    }
+  ]
+}
