@@ -1,9 +1,6 @@
 name: Build Evolution TV IPK
 
 on:
-  push:
-    tags:
-      - 'v*'
   workflow_dispatch:
 
 jobs:
