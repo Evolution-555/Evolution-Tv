@@ -28,6 +28,6 @@
     "url": "https://github.com/Evolution-555/Evolution-Tv.git"
   },
   "devDependencies": {
-    "@webosose/ares-cli": "^2.0.0"
+    "@webosose/ares-cli": "^2.4.0"
   }
 }
