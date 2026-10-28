@@ -1,0 +1,43 @@
+name: Build Evolution TV IPK
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Install webOS CLI
+        run: |
+          npm install -g @webosose/ares-cli
+
+      - name: Build IPK
+        run: |
+          ares-package .
+
+      - name: Rename IPK
+        run: |
+          mv com.evolution555.evolutiontv_*.ipk evolution-tv.ipk
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: evolution-tv-ipk
+          path: evolution-tv.ipk
+
+      - name: Create Release
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v1
+        with:
+          files: evolution-tv.ipk
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -2,6 +2,14 @@
 
 A lightweight, optimized TV application for LG webOS with comprehensive TV show and movie tracking. Features a modular widget system, Trakt integration for watch tracking, Stremio/Cyberflix addon support, and Debrid provider integration for streaming.
 
+## 🚀 Quick Install
+
+1. Download the IPK from [GitHub Releases](https://github.com/Evolution-555/Evolution-Tv/releases)
+2. Install via LG Homebrew Channel
+3. Configure Trakt, Debrid, and add-ons in the app settings
+
+See [INSTALLATION.md](INSTALLATION.md) for detailed instructions.
+
 ## Key Features
 
 - **TV Show & Movie Tracking**: Track what you're watching, episode progress, and watch history
